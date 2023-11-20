@@ -1,6 +1,5 @@
 import app from './app';
 import config from './app/config';
-
 import mongoose from 'mongoose';
 // We will get connectivity with server calling the function
 async function main() {
@@ -13,4 +12,4 @@ async function main() {
     console.log(err);
   }
 }
-main(); //won't connect mongoose also won't listen app too
+main(); //If we don't call, it won't connect mongoose also cannot listen app
